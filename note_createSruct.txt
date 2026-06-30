@@ -1,0 +1,13 @@
+python -c "
+import os
+ignore_dirs = {'.venv', '.git', 'androidTV', 'damMinhVaoHocSau', 'node_modules'}
+
+with open('tree.txt', 'w', encoding='utf-8') as f:
+    for root, dirs, files in os.walk('.'):
+        dirs[:] = [d for d in dirs if d not in ignore_dirs]
+        level = root.replace('.', '', 1).count(os.sep)
+        folder_name = os.path.basename(root) if root != '.' else os.path.basename(os.getcwd())
+        f.write('|   ' * level + '|___ [' + folder_name + ']\n')
+        for file in files:
+            f.write('|   ' * (level + 1) + '|--- ' + file + '\n')
+"

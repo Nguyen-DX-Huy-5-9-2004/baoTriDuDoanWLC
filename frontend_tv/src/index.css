@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { 
+  background-color: #070b14; 
+  overflow: hidden; 
+  margin: 0; 
+}
+
+@layer components {
+  /* =========================================
+     1. KHỐI HEADER & KPI BADGES
+     ========================================= */
+  .kpi-badge-safe {
+    @apply flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 border border-green-500/50 rounded text-green-400 font-bold shadow-[inset_0_0_10px_rgba(34,197,94,0.1)];
+  }
+  .kpi-badge-warn {
+    @apply flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-[#1a1500] border border-yellow-500 rounded text-yellow-500 font-bold shadow-[inset_0_0_10px_rgba(234,179,8,0.2)];
+  }
+  .kpi-badge-danger {
+    @apply flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-[#2a0808] border border-red-500 rounded text-red-500 font-bold shadow-[inset_0_0_10px_rgba(239,68,68,0.3)];
+  }
+
+  /* =========================================
+     2. KHỐI DASHBOARD TRUNG TÂM (SỰ CỐ, BIỂU ĐỒ)
+     ========================================= */
+  .dashboard-panel {
+    @apply bg-[#0d1522] rounded-xl border border-slate-700 p-3 md:p-4 flex flex-col relative shadow-lg;
+  }
+  .panel-title {
+    @apply text-white font-bold flex items-center gap-2 mb-2 md:mb-4 text-sm md:text-base border-b border-slate-700/50 pb-2;
+  }
+  .chart-legend-dot {
+    @apply w-2.5 h-2.5 rounded-full;
+  }
+
+  /* =========================================
+     3. KHỐI THẺ MÁY MÓC (MACHINE CARDS)
+     ========================================= */
+  .machine-card-base {
+    @apply rounded-xl border p-3 flex flex-col relative transition-colors;
+  }
+  .machine-card-normal {
+    @apply border-green-600/60 bg-[#091515] hover:border-green-400/80;
+  }
+  .machine-card-danger {
+    @apply border-red-600 bg-[#160606] shadow-[0_0_15px_rgba(220,38,38,0.3)];
+  }
+}

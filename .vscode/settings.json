@@ -1,0 +1,37 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "Sync to Google Drive",
+                "description": "Đồng bộ code sang GDrive",
+                "files": [
+                    "**/*"
+                ],
+                "exclude": [
+                    "!**/.vscode/**",
+                    "!**/.git/**",
+                    "!**/.venv/**",
+                    "!**/__pycache__/**",
+                    "!**/*.pyc",
+                    "!**/node_modules/**",
+                    "!.vscode",
+                    "!.git",
+                    "!.venv",
+                    "!__pycache__",
+                    "!*.pyc",
+                    "!/androidTV/",
+                    "!/frontend_tv/",
+                    "!*.docx"
+                ],
+                "deployOnSave": true
+            }
+        ],
+        "targets": [
+            {
+                "type": "local",
+                "name": "GDrive_Folder",
+                "dir": "G:/My Drive/tBTDD"
+            }
+        ]
+    }
+}

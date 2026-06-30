@@ -1,0 +1,257 @@
+|___ [tBTDD]
+|   |--- .gitignore
+|   |--- chienThuatData.docx
+|   |--- chuyenDemoSangThuongMai.docx
+|   |--- colab.txt
+|   |--- Dataset Nhóm Dữ liệu Mới.md
+|   |--- dataset_audit_report.txt
+|   |--- drive.ignore
+|   |--- Dự kiến data và cách thức cho nâng cấp thực tế thương mại.docx
+|   |--- fontsizenote.txt
+|   |--- Hiện tại data để mô hình huấn luyện đang có chất lượng rất thấp.docx
+|   |--- nghienCuXayDataset.docx
+|   |--- note_createSruct.txt
+|   |--- optionDataa.docx
+|   |--- README.md
+|   |--- requirements.txt
+|   |--- requirements2.txt
+|   |--- sync.py
+|   |--- testGRUautoencoder.py
+|   |--- tree.txt
+|   |--- TỪ ĐIỂN DỮ LIỆU ĐẦU VÀO CỦA HỆ THỐN.txt
+|   |___ [.continue]
+|   |   |___ [agents]
+|   |   |   |--- new-config-1.yaml
+|   |   |   |--- new-config.yaml
+|   |___ [.vscode]
+|   |   |--- settings.json
+|   |___ [data]
+|   |   |--- baiToan.txt
+|   |   |--- createDatabase.sql
+|   |   |--- data_remediation_pipeline.py
+|   |   |--- diagnostic_data_inspector.py
+|   |   |--- full_dataset_report.py
+|   |   |--- noteData.txt
+|   |   |--- pipeline_press_brake.py
+|   |   |--- raw_dataset_audit_report.txt
+|   |   |--- raw_data_explorer.py
+|   |   |___ [processed]
+|   |   |   |--- dataset_audit_report.txt
+|   |   |   |--- dynamic_window_analyzer.py
+|   |   |   |--- laser_final_features.csv
+|   |   |   |--- press_brake_final_features.csv
+|   |   |   |--- punching_final_features.csv
+|   |   |   |--- welding_robot_final_features.csv
+|   |   |___ [processed_final_xgboost]
+|   |   |   |--- laser_xgboost_ready.csv
+|   |   |   |--- press_brake_xgboost_ready.csv
+|   |   |   |--- punching_xgboost_ready.csv
+|   |   |   |--- robot_xgboost_ready.csv
+|   |   |___ [processed_final_xgboost_ready]
+|   |   |   |--- laser_xgboost_ready.csv
+|   |   |   |--- press_brake_xgboost_ready.csv
+|   |   |   |--- punching_xgboost_ready.csv
+|   |   |   |--- robot_xgboost_ready.csv
+|   |   |   |--- validate_datasets.py
+|   |   |___ [processed_final_xgboost_v2]
+|   |   |   |--- laser_xgboost_ready.csv
+|   |   |   |--- press_brake_xgboost_ready.csv
+|   |   |   |--- punching_xgboost_ready.csv
+|   |   |   |--- robot_xgboost_ready.csv
+|   |   |___ [processed_final_xgboost_v5]
+|   |   |   |--- laser_xgboost_ready.csv
+|   |   |   |--- press_brake_xgboost_ready.csv
+|   |   |___ [processed_final_xgboost_v6]
+|   |   |   |--- laser_xgboost_ready.csv
+|   |   |   |--- press_brake_xgboost_ready.csv
+|   |   |   |--- punching_xgboost_ready.csv
+|   |   |   |--- robot_xgboost_ready.csv
+|   |   |___ [processed_v3_ultimate]
+|   |   |   |--- dataset_audit_report.txt
+|   |   |   |--- laser_ultimate.csv
+|   |   |   |--- press_brake_ultimate.csv
+|   |   |   |--- punching_ultimate.csv
+|   |   |   |--- robot_ultimate.csv
+|   |   |___ [raw]
+|   |   |   |___ [catLaser]
+|   |   |   |   |--- ai4i2020.csv
+|   |   |   |___ [chanTon1]
+|   |   |   |   |--- CE.txt
+|   |   |   |   |--- CP.txt
+|   |   |   |   |--- description.txt
+|   |   |   |   |--- documentation.txt
+|   |   |   |   |--- EPS1.txt
+|   |   |   |   |--- FS1.txt
+|   |   |   |   |--- FS2.txt
+|   |   |   |   |--- profile.txt
+|   |   |   |   |--- PS1.txt
+|   |   |   |   |--- PS2.txt
+|   |   |   |   |--- PS3.txt
+|   |   |   |   |--- PS4.txt
+|   |   |   |   |--- PS5.txt
+|   |   |   |   |--- PS6.txt
+|   |   |   |   |--- SE.txt
+|   |   |   |   |--- TS1.txt
+|   |   |   |   |--- TS2.txt
+|   |   |   |   |--- TS3.txt
+|   |   |   |   |--- TS4.txt
+|   |   |   |   |--- VS1.txt
+|   |   |   |___ [chanTon2]
+|   |   |   |   |--- CE.txt
+|   |   |   |   |--- CP.txt
+|   |   |   |   |--- description.txt
+|   |   |   |   |--- documentation.txt
+|   |   |   |   |--- documentation_condition+monitoring+of+hydraulic+systems.txt
+|   |   |   |   |--- EPS1.txt
+|   |   |   |   |--- FS1.txt
+|   |   |   |   |--- FS2.txt
+|   |   |   |   |--- profile.txt
+|   |   |   |   |--- PS1.txt
+|   |   |   |   |--- PS2.txt
+|   |   |   |   |--- PS3.txt
+|   |   |   |   |--- PS4.txt
+|   |   |   |   |--- PS5.txt
+|   |   |   |   |--- PS6.txt
+|   |   |   |   |--- SE.txt
+|   |   |   |   |--- TS1.txt
+|   |   |   |   |--- TS2.txt
+|   |   |   |   |--- TS3.txt
+|   |   |   |   |--- TS4.txt
+|   |   |   |   |--- VS1.txt
+|   |   |   |___ [dotDap]
+|   |   |   |   |--- tool_wear_dataset.csv
+|   |   |   |___ [hanRobot]
+|   |   |   |   |--- predictive_maintenance_v3.csv
+|   |   |   |___ [iot-integrated-predictive-maintenance-dataset]
+|   |   |   |   |--- predictive_maintenance_dataset.csv
+|   |   |   |___ [microsoft-azure-predictive-maintenance]
+|   |   |   |   |--- PdM_errors.csv
+|   |   |   |   |--- PdM_failures.csv
+|   |   |   |   |--- PdM_machines.csv
+|   |   |   |   |--- PdM_maint.csv
+|   |   |   |   |--- PdM_telemetry.csv
+|   |   |   |___ [predictive-maintenance-dataset-ai4i-2020]
+|   |   |   |   |--- ai4i2020.csv
+|   |___ [demo]
+|   |   |___ [data_pipeline]
+|   |   |   |--- data_merger.py
+|   |   |   |--- erp_feature_engineering.py
+|   |   |   |--- init_timescaledb.py
+|   |   |   |--- live_data_feeder.py
+|   |   |   |--- time_series_generator.py
+|   |   |   |--- __init__.py
+|   |   |   |___ [__pycache__]
+|   |   |   |   |--- erp_feature_engineering.cpython-314.pyc
+|   |   |   |   |--- live_data_feeder.cpython-314.pyc
+|   |   |   |   |--- time_series_generator.cpython-314.pyc
+|   |   |   |   |--- __init__.cpython-314.pyc
+|   |   |___ [dlData]
+|   |   |   |--- dtaIoTmaintence.py
+|   |   |___ [saved_models]
+|   |   |   |--- gru_best_model.pth
+|   |   |   |--- gru_latest_model.pth
+|   |   |   |--- xgb_model_comp1.json
+|   |   |   |--- xgb_model_comp2.json
+|   |   |   |--- xgb_model_comp3.json
+|   |   |   |--- xgb_model_comp4.json
+|   |___ [deployed_models]
+|   |   |___ [laser_expert]
+|   |   |   |--- laser_dynamic_scaler.pkl
+|   |   |   |--- laser_hybrid_best.keras
+|   |   |   |--- laser_static_scaler.pkl
+|   |   |___ [press_brake_expert]
+|   |   |   |--- press_brake_dynamic_scaler.pkl
+|   |   |   |--- press_brake_hybrid_best.keras
+|   |   |   |--- press_brake_static_scaler.pkl
+|   |   |___ [punching_expert]
+|   |   |   |--- punching_dynamic_scaler.pkl
+|   |   |   |--- punching_hybrid_best.keras
+|   |   |   |--- punching_static_scaler.pkl
+|   |   |___ [robot_expert]
+|   |   |   |--- robot_dynamic_scaler.pkl
+|   |   |   |--- robot_hybrid_best.keras
+|   |   |   |--- robot_static_scaler.pkl
+|   |___ [frontend_tv]
+|   |   |--- .gitignore
+|   |   |--- eslint.config.js
+|   |   |--- index.html
+|   |   |--- package-lock.json
+|   |   |--- package.json
+|   |   |--- postcss.config.js
+|   |   |--- README.md
+|   |   |--- tailwind.config.js
+|   |   |--- vite.config.js
+|   |   |___ [public]
+|   |   |   |--- favicon.svg
+|   |   |   |--- icons.svg
+|   |   |   |___ [hinhMay]
+|   |   |   |   |--- mayCatLaser1.webp
+|   |   |   |   |--- mayCatLaser2.webp
+|   |   |   |   |--- mayCatLaser3.webp
+|   |   |   |   |--- mayChanTon1.webp
+|   |   |   |   |--- mayHanTuDong1.webp
+|   |   |   |   |--- mayHanTuDong2.webp
+|   |   |___ [src]
+|   |   |   |--- App.css
+|   |   |   |--- App.jsx
+|   |   |   |--- index.css
+|   |   |   |--- main.jsx
+|   |   |   |___ [assets]
+|   |   |   |   |--- hero.png
+|   |   |   |   |--- react.svg
+|   |   |   |   |--- vite.svg
+|   |___ [models]
+|   |___ [notebooks]
+|   |   |--- 01_eda_azure.ipynb
+|   |   |--- 02_hybrid_model_training.ipynb
+|   |___ [src]
+|   |   |--- backend.log
+|   |   |--- backend_api.py
+|   |   |--- config.py
+|   |   |--- explain_live_alert.py
+|   |   |--- explain_model.py
+|   |   |--- frontend_tv.py
+|   |   |--- predict_live_stream.py
+|   |   |--- predict_live_streamTV.py
+|   |   |--- predict_realtime_demo.py
+|   |   |--- train_pipeline.py
+|   |   |___ [batch_layer]
+|   |   |___ [database]
+|   |   |   |--- createDatabase.sql
+|   |   |   |--- db_connection.py
+|   |   |___ [db_setup]
+|   |   |   |--- create_tables.sql
+|   |   |   |--- load_csv_data.py
+|   |   |___ [edge_layer]
+|   |   |___ [etl_pipeline]
+|   |   |   |--- universal_etl.py
+|   |   |___ [experts_training]
+|   |   |   |--- train_laser_expert.py
+|   |   |   |--- train_press_brake_expert.py
+|   |   |   |--- train_punching_expert.py
+|   |   |   |--- train_robot_expert.py
+|   |   |___ [explainability]
+|   |   |   |--- shap_explainer.py
+|   |   |___ [inference_engine]
+|   |   |   |--- api_dispatcher.py
+|   |   |   |--- predict_router.py
+|   |   |   |--- stateful_buffer.py
+|   |   |___ [models]
+|   |   |   |--- config.py
+|   |   |   |--- gru_extractor.py
+|   |   |   |--- xgboost_classifier.py
+|   |   |   |--- __init__.py
+|   |   |   |___ [saved_models]
+|   |   |   |___ [__pycache__]
+|   |   |   |   |--- config.cpython-314.pyc
+|   |   |   |   |--- gru_extractor.cpython-314.pyc
+|   |   |   |   |--- xgboost_classifier.cpython-314.pyc
+|   |   |   |   |--- __init__.cpython-314.pyc
+|   |   |___ [utils]
+|   |   |   |--- memory_optimizer.py
+|   |   |   |--- __init__.py
+|   |   |___ [__pycache__]
+|   |   |   |--- backend_api.cpython-314.pyc
+|   |   |   |--- config.cpython-314.pyc
+|   |   |   |--- predict_realtime.cpython-314.pyc
+|   |   |   |--- predict_realtime_demo.cpython-314.pyc

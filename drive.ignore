@@ -1,0 +1,10 @@
+.vscode/
+.git/
+.venv/
+__pycache__/
+*.pyc
+androidTV/
+frontend_tv/
+*.docx
+drive.ignore
+sync.py

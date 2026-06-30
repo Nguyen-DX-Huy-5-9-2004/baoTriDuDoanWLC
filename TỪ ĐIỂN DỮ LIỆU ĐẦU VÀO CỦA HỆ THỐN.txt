@@ -1,0 +1,45 @@
+TỪ ĐIỂN DỮ LIỆU ĐẦU VÀO CỦA HỆ THỐNG AI (DATA DICTIONARY)
+
+Để AI có thể đưa ra 1 lời chẩn đoán cho 1 chiếc máy tại 1 thời điểm, hệ thống không ăn 1 dòng dữ liệu đơn lẻ, mà nó ăn một "Hồ sơ bệnh án ghép" từ 2 nguồn: Cảm biến và ERP.
+
+Lúc chạy file predict_realtime.py, 1 bản ghi đưa vào hệ thống bao gồm 2 mảnh ghép:
+
+Mảnh ghép A: Dữ liệu Chuỗi thời gian (Cho GRU)
+
+Là một ma trận có kích thước [24 dòng x 4 cột]. Nó đại diện cho lịch sử 24 giờ qua.
+
+volt: Điện áp (đã chuẩn hóa)
+
+rotate: Tốc độ vòng quay (đã chuẩn hóa)
+
+#pressure: Áp suất (đã chuẩn hóa)
+#vibration: Độ rung (đã chuẩn hóa)
+=> Mạng GRU sẽ "nhai" ma trận 24x4 này và nén nó lại thành 64 con số (Vector Ký ức).
+
+Mảnh ghép B: Dữ liệu Trạng thái ERP (Cho XGBoost)
+
+Là một vector ngang chỉ có đúng [1 dòng x 10 cột], đại diện cho tình trạng hiện tại của máy:
+
+error1_24h: Số lần báo lỗi số 1 trong 24h qua.
+
+error2_24h: Số lần báo lỗi số 2 trong 24h qua.
+
+error3_24h: Số lần báo lỗi số 3 trong 24h qua.
+
+error4_24h: Số lần báo lỗi số 4 trong 24h qua.
+
+error5_24h: Số lần báo lỗi số 5 trong 24h qua.
+
+days_since_comp1: Số ngày tính từ lần cuối thay linh kiện 1.
+
+days_since_comp2: Số ngày tính từ lần cuối thay linh kiện 2.
+
+days_since_comp3: Số ngày tính từ lần cuối thay linh kiện 3.
+
+days_since_comp4: Số ngày tính từ lần cuối thay linh kiện 4.
+
+machine_age: Tuổi thọ của khung máy (năm).
+
+TỔNG HỢP (MA TRẬN LAI)
+
+Cuối cùng, 64 con số của GRU ghép với 10 con số của ERP tạo thành 1 bản ghi có đúng 74 cột. Đây chính là dữ liệu đưa vào não bộ XGBoost để nó phán quyết rủi ro!

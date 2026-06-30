@@ -1,0 +1,14 @@
+cell 1:
+!pip install -r /content/drive/MyDrive/tBTDD/requirements2.txt
+
+cell 2: Kích hoạt lần lượt các Chuyên gia
+!python /content/drive/MyDrive/tBTDD/src/experts_training/train_robot_expert.py
+
+# Huấn luyện máy Laser
+!python /content/drive/MyDrive/tBTDD/src/experts_training/train_laser_expert.py
+
+# Huấn luyện máy Chấn
+!python /content/drive/MyDrive/tBTDD/src/experts_training/train_press_brake_expert.py
+
+# Huấn luyện máy Đột
+!python /content/drive/MyDrive/tBTDD/src/experts_training/train_punching_expert.py 
