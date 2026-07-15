@@ -17,3 +17,4 @@ npx tailwindcss init -p
 npm install lucide-react
 
 postgred cài timeScaleDB
+bcp "i26s02004_iot_dev.dbo.data_ot" out "D:\export\data_ot.csv" -c -t, -S "10.29.134.73,45193" -U "i26s02004" -P "pfKJBmFdnQWrVqnJs"
