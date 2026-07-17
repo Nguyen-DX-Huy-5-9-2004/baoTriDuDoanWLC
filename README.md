@@ -1,7 +1,9 @@
 # tBTDD - Predictive Maintenance Dashboard
 
-Dự án mô phỏng hệ thống giám sát bảo trì dự đoán cho nhà máy. Hệ thống nhận dữ liệu IoT theo thời gian thực, dùng mô hình AI để ước lượng rủi ro hỏng linh kiện trong 48 giờ tiếp theo, sau đó hiển thị lên dashboard TV.
--Dữ liệu được dùng cho dự án là các dữ liệu chuẩn công nghiệp phổ biến, hoàn toàn có khả năng và dễ dàng triển khai để đáp ứng yêu cầu AI bảo trì dự đoán. Tuy nhiên tùy theo điều kiện thực tế của mỗi doanh nghiệp có thể dễ dàng lựa chọn/điều chỉnh dữ liệu đầu vào để mô hình có độ chính xác nhất
+Dự án hệ thống giám sát bảo trì dự đoán cho nhà máy. Hệ thống nhận dữ liệu IoT theo thời gian thực, dùng mô hình AI để ước lượng rủi ro hỏng linh kiện trong 48 giờ tiếp theo, sau đó hiển thị lên dashboard TV.
+
+-Dữ liệu được dùng cho dự án là các dữ liệu chuẩn công nghiệp phổ biến, hoàn toàn có khả năng và dễ dàng triển khai IOT thu thập những dự liệu vận hành cần thiết để đáp ứng yêu cầu AI bảo trì dự đoán. Tuy nhiên tùy theo điều kiện thực tế của mỗi doanh nghiệp có thể dễ dàng lựa chọn/điều chỉnh các trường, đặc điểm dữ liệu đầu vào để mô hình có độ chính xác nhất
+
 -Mô hình được xây dựng để vừa có khả năng triển khai, chạy tại biên hoặc sử dụng server cục bộ/đám mây của doanh nghiệp mà không cần yêu cầu GPU khắt khe
 ## Chức năng chính
 
